@@ -2,23 +2,19 @@ import React, { useEffect, useState } from 'react';
 
 import './homepage.css';
 
-import Works from '../WORKS & CERTIFICATE/Works';
-
-import java from '../../Components/HomeImages/java.png';
 import mysql from '../../Components/HomeImages/mysql.png';
-import csharp from '../../Components/HomeImages/csharp.png';
 import html from '../../Components/HomeImages/html.png';
 import css from '../../Components/HomeImages/css.png';
 import js from '../../Components/HomeImages/js.png';
-import php from '../../Components/HomeImages/php.png';
 import blender from '../../Components/HomeImages/blender.png';
-import androidStudio from '../../Components/HomeImages/androidStudio.png';
 import unity from '../../Components/HomeImages/unity.png';
 import react from '../../Components/HomeImages/react.png';
 
 import { TechStacks } from '../../Components/Data/techStacks';
 
 import HeaderNAv from '../../Components/Headers/HeaderNAv';
+import Works from '../WORKS & CERTIFICATE/Works';
+import Contact from '../CONTACT/Contact';
 
 const HomePage = () => {
 
@@ -192,6 +188,10 @@ const HomePage = () => {
 
       <div className='parentContainer works' id='works'>
         <Works/>
+      </div>
+
+      <div className='parentContainer contact' id='contact'>
+        <Contact/>
       </div>
     </>
   )

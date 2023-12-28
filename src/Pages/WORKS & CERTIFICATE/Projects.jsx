@@ -8,7 +8,7 @@ const Projects = (props) => {
     <>
         <div className='projectContent'>
             <div className='projectsGallery'>
-            <a href={pageLink}>
+            <a href={pageLink} target='_blank'>
                 <div className="project">
                     <img src={payroll} />
                 </div>

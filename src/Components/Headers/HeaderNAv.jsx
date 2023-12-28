@@ -22,13 +22,13 @@ const HeaderNAv = () => {
                 <a className='anchor' href="#contact">Contact</a>
                     <a className='anchor' href="https://github.com/Power-Cej" target="_blank"><img
                             style={{height: '40px', width: '40px', filter: 'brightness(0) invert(1)',}}
-                            src={github} /></a>
+                            src={github} alt='GITHUB' /></a>
                     
                 </div>
             </div>
         </div>
         <nav>
-            <a className='anchor' href="https://github.com/Power-Cej" target="_blank"><img src={github} className="github" /></a>
+            <a className='anchor' href="https://github.com/Power-Cej" target="_blank"><img src={github} className="github" alt='GITHUB'/></a>
             <a className='anchor' href="#contact">Contact</a>
             <a className='anchor' href="#works">Works</a>
         </nav>

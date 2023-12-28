@@ -1,7 +1,7 @@
 .workContent {
     width: 100vw;
     height: 100vh;
-    padding: 3rem;
+    padding: 0 3rem;
 }
 
 .workContent h3 {
@@ -33,10 +33,30 @@
     border-color: var(--lavander-purple);
 }
 
+.projectsGallery:hover {
+    transform: scale(1.05);
+}
+
+
+.projectsGallery:hover::after {
+    /* content: "Show project"; */
+    position: absolute;
+    color: var(--lavander-purple);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid;
+}
 .projectsGallery h4 {
     color: var(--glow-purple);
     font-size: 20px;
     margin: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .projectsGallery p {
@@ -63,4 +83,31 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+}
+
+@media screen and (max-width: 1000px) {
+
+    .workContent {
+        width: 100vw;
+        height: 100%;
+        padding: 3rem;
+    }
+
+
+    .workContent h3 {
+        font-weight: bold;
+        font-size: 20px;
+        height: 1rem;
+        margin: 1rem 0;
+        color: var(--glow-purple);
+    }
+    
+    .projectList {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+    
 }

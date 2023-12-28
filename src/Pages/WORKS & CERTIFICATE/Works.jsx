@@ -53,8 +53,7 @@ const projectData = [
         image: certificate,
         pageLink: "https://www.freecodecamp.org/certification/fcc74b38cce-0711-42b5-a2c8-da8b3de9c4f2/responsive-web-design",
         title: "Responsive Web Design",
-        paragraph: `Contact tracing is a public health technique used to help identify and contain the spread of infectious diseases,
-        such as COVID-19, by identifying and notifying people who may have been in close contact with someone who has tested positive for the disease.`
+        paragraph: `Developer Certification from freeCodeCamp on December 9, 2022 representing approximately 300 hours of work`
       },
   ]
 
@@ -65,7 +64,6 @@ const Works = () => {
     <h3>WORKS</h3>
     <div className='projectList'>
       {projectData.map((project, index) => {
-        console.log('Image Path:', project.title);
         return (
             <Projects
           key={index}
@@ -83,7 +81,6 @@ const Works = () => {
 <h3>Certificate</h3>
     <div className='projectList'>
       {certificateData.map((certificate, index) => {
-        console.log('Image Path:', certificate.title);
         return (
             <Projects
           key={index}
