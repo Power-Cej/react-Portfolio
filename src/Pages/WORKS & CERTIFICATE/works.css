@@ -1,0 +1,66 @@
+.workContent {
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.workContent h3 {
+    font-weight: bold;
+    font-size: 30px;
+    height: 3rem;
+    margin: 2rem 0;
+    color: var(--glow-purple);
+}
+
+.projectList {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.projectContent {
+    width: 100%;
+    height: 20rem;
+}
+
+.projectsGallery {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: var(--lavander-purple);
+}
+
+.projectsGallery h4 {
+    color: var(--glow-purple);
+    font-size: 20px;
+    margin: 5px;
+}
+
+.projectsGallery p {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+    white-space: normal;
+    line-height: 1.3em;
+    color: var(--primary-color);
+}
+
+.project {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+}
