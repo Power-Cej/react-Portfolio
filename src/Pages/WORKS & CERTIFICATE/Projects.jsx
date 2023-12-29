@@ -4,11 +4,15 @@ const Projects = (props) => {
     
     const {payroll, pageLink, title, paragraph} = props;
 
+    const handleOnclick = () => {
+        window.location.href = pageLink;
+    }
+
   return (
     <>
         <div className='projectContent'>
             <div className='projectsGallery'>
-            <a href={pageLink} target='_blank'>
+            <a onClick={handleOnclick}>
                 <div className="project">
                     <img src={payroll} />
                 </div>

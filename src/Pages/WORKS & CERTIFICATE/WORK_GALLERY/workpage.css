@@ -1,0 +1,18 @@
+.workPageContent {
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 25px;
+    line-height: 70px;
+    padding: 5rem 0;
+}
