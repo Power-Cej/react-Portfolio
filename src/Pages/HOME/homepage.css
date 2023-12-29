@@ -161,6 +161,7 @@ header {
 .hubby p {
     float: left;
     color: var(--paragraph-color);
+    font-size: 20px;
     padding-right: 30px;
 }
 .skills {
@@ -199,9 +200,8 @@ ul li {
         font-size: 2rem;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
-        width: 100%;
+        width: 100vw;
         height: 8%;
-        padding: 0 10rem;
         background: linear-gradient(to right, #594BBB, #030130);
     }
 
@@ -232,17 +232,34 @@ ul li {
         align-items: center;
     }
 
+    .hubby {
+        width: 90%;
+        float: left;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+
     .hubby h3 {
         float: left;
-        font-size: 20px;
+        font-size: 25px;
         color: var(--primary-color);
     }
     
     .hubby h2 {
         float: left;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 28px;
         color: var(--primary-color);
+    }
+
+    .hubby p {
+        float: left;
+        color: var(--paragraph-color);
+        font-size: 15px;
+        padding-right: 30px;
     }
 
     .containerIntro{
@@ -327,13 +344,15 @@ ul li {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 3px;
     }
 
     ul li {
         font-size: 12px;
         font-weight: bold;
         text-align: center;
-        flex-basis: 50%;
+        flex-basis: 30%;
+        margin: 5px;
     }
     
 
