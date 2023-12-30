@@ -53,7 +53,7 @@ const WorkPage = () => {
               {
                 selectedProject.image.map((image, imageIndex) => 
                 (
-                    <img key={imageIndex} style={{width: '40%', height: '40%'}} src={image} />
+                    <img key={imageIndex} className='payroll' src={image} />
                     
                 ))
               }

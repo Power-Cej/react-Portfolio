@@ -82,3 +82,103 @@
     height: 40%;
     margin: 3rem;
 }
+
+.project-image .payroll {
+    width: 40%; 
+    height: 40%;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .workPageContent {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .projectDisplay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .projectDisplay h1 {
+        position: relative;
+        color: var(--primary-color);
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 25px;
+        line-height: 70px;
+        padding: 5rem 0;
+        text-align: center;
+    }
+    
+    
+    
+    .link-pos {
+        width: 90vw;
+        padding: 0;
+        margin: 3rem;
+    }
+    
+    .open-project {
+        text-decoration: none;
+        width: 100vw;
+        color: var(--primary-color);
+        font-size: 25px;
+        transition: transform 0.3s ease;
+    }
+    
+    .open-project:hover{
+        color: var(--paragraph-color) !important;
+    }
+    
+    .open-project:hover:after {
+        content: "→";
+        font-size: 30px;
+        
+    }
+    .projectDisplay p {
+        position: relative;
+        color: var(--primary-color);
+        font-size: 20px;
+        width: 80%;
+    }
+    
+    .preview {
+        border: 3px solid;
+        /* margin: 5rem; */
+        border: 1px solid;
+        border-color: var(--lavander-purple);
+        margin-bottom: 2rem;
+    }
+    .project-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .project-image img {
+        position: relative;
+        flex-basis: 20%;
+        color: var(--primary-color);
+        width: 50%;
+        height: 50vh;
+        margin: 1rem;
+    }
+    
+    .project-image .payroll {
+        width: 80%; 
+        height: 80%;
+    }
+}
