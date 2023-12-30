@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './works.css'
 import Projects from './Projects';
+import Certificates from './Certificate';
 
 import { projectData, certificateData } from '../../Components/Data/projectData';
 
 const Works = () => {
+
+  
+
   return (
     <>
     <div className='workContent'>
@@ -14,10 +18,11 @@ const Works = () => {
         return (
             <Projects
           key={index}
-          payroll={project.image}
+          payroll={project.image[0]}
           pageLink={project.pageLink}
           title={project.title}
           paragraph={project.paragraph}
+          index={index}
         />
         );
         
@@ -29,7 +34,7 @@ const Works = () => {
     <div className='projectList'>
       {certificateData.map((certificate, index) => {
         return (
-            <Projects
+            <Certificates
           key={index}
           payroll={certificate.image}
           pageLink={certificate.pageLink}

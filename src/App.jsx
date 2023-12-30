@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { MyContextProvider } from './myConetxtProvider'
 
 // PAGES 
 import HomePage from './Pages/HOME/HomePage'
@@ -10,14 +11,19 @@ import WorkPage from './Pages/WORKS & CERTIFICATE/WORK_GALLERY/WorkPage'
 
 function App() {
 
+
   return (
+    // <MyContextProvider>
+
       <BrowserRouter>
         <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/works' element={<Works />} />
-        <Route path='/payroll' element={<WorkPage />} />
+        <Route path='/projects' element={<WorkPage />} />
         </Routes>
       </BrowserRouter>
+
+      // </MyContextProvider>
   )
 }
 

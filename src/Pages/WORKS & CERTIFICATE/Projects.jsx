@@ -1,11 +1,18 @@
-import React from 'react'
+// import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom';
+// import { MyContext } from '../../myConetxtProvider';
 
 const Projects = (props) => {
+
+    // const {setIndexKey} = useContext(MyContext);
     
-    const {payroll, pageLink, title, paragraph} = props;
+    const {payroll, pageLink, title, paragraph, index} = props;
+    const navigate = useNavigate();
 
     const handleOnclick = () => {
-        window.location.href = pageLink;
+        navigate(pageLink);
+        // setIndexKey(index);
+        sessionStorage.setItem("IndexValue", index);
     }
 
   return (
