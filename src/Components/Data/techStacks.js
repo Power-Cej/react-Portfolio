@@ -5,5 +5,5 @@ export const TechStacks = [
     {value: "CSS", label: "CSS"},
     {value: "BLENDER", label: "BLENDER"},
     {value: "MYSQL", label: "MYSQL"},
-    {value: "UNITY", label: "UNITY"},
+    {value: "GIT", label: "GIT"},
 ]

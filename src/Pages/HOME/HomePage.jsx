@@ -7,7 +7,7 @@ import html from '../../Components/HomeImages/html.png';
 import css from '../../Components/HomeImages/css.png';
 import js from '../../Components/HomeImages/js.png';
 import blender from '../../Components/HomeImages/blender.png';
-import unity from '../../Components/HomeImages/unity.png';
+import git from '../../Components/HomeImages/git.png';
 import react from '../../Components/HomeImages/react.png';
 
 import { TechStacks } from '../../Components/Data/techStacks';
@@ -167,7 +167,7 @@ const HomePage = () => {
 
 
     <div className='horizontalIMG'>
-    <img src={unity} className="object" data-value="-5"
+    <img src={git} className="object" data-value="-5"
         alt="UNITY"/>
     <img src={js} className="object" data-value="5"
         alt="JAVASCRIPT"/>
