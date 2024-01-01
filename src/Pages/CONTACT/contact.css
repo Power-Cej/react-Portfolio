@@ -43,8 +43,7 @@
 .contact-link button {
     width: 55%;
     background-color: var(--night-purple);
-    border: 1px solid;
-    border-color: var(--glow-purple);
+    border: 1px solid var(--glow-purple);
     color: var(--primary-color);
 }
 
@@ -58,8 +57,7 @@ button:hover {
     margin: auto;
     height: 100%;
     padding: 3rem;
-    border: 1px solid;
-    border-color: var(--glow-purple);
+    border: 1px solid var(--glow-purple);
     display: block;
 }
 
@@ -83,9 +81,9 @@ label {
     writing-mode: horizontal-tb;
     padding: 10px;
     font-size: 20px;
-    border: 1px solid rgb(189, 185, 185);
-    border-color: var(--lavander-purple);
+    border: 1px solid var(--lavander-purple);
     background-color: var(--midnight-blue);
+    color: var(--primary-color);
     text-align: start;
     display: inline-block;
     word-spacing: normal;
@@ -103,8 +101,7 @@ label {
     padding: 2rem;
     width: 100%;
     margin: auto;
-    border: 1px solid;
-    border-color: var(--glow-purple);
+    border: 1px solid var(--glow-purple);
 }
 
 @media screen and (max-width: 1000px) {
@@ -148,8 +145,7 @@ label {
     margin: auto;
     height: 100%;
     padding: 2rem;
-    border: 1px solid;
-    border-color: var(--glow-purple);
+    border: 1px solid var(--glow-purple);
     display: block;
 }
 
@@ -173,8 +169,8 @@ label {
     writing-mode: horizontal-tb;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid rgb(189, 185, 185);
-    border-color: var(--lavander-purple);
+    border: 1px solid var(--lavander-purple);
+    color: var(--primary-color);
     background-color: var(--midnight-blue);
     text-align: start;
     display: inline-block;
@@ -206,8 +202,7 @@ label {
     padding: 1.5rem;
     width: 100%;
     margin: auto;
-    border: 1px solid;
-    border-color: var(--glow-purple);
+    border: 1px solid var(--glow-purple);
 }
 
 }
