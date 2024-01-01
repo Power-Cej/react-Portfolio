@@ -36,7 +36,6 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/works' element={<Works />} />
           <Route path='/projects' element={<WorkPage />} />
-          <Route path='/projects' element={<WorkPage />} />
           <Route path='/load' element={<LoadingScreen />} />
         </Routes>
         )

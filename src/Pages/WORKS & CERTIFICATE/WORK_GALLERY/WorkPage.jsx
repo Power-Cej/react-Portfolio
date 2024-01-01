@@ -31,7 +31,7 @@ const WorkPage = () => {
             </div>
 
             
-          <div className="preview">
+          
                 {
                   parseInt(indexKey) === 0 ? 
                   (
@@ -39,12 +39,14 @@ const WorkPage = () => {
                   )
                   :
                   (
+                    <div className="preview">
                     <video src={selectedProject.video} width="640" height="360" autoPlay loop muted controls>
                     Your browser does not support the video tag.
                 </video>
+                </div>
                   )
                 }
-           </div>
+           
 
           {
             parseInt(indexKey) === 0 ?
