@@ -1,112 +1,173 @@
 .workContent {
-    width: 100vw;
-    height: 100vh;
-    padding: 0 3rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 3rem;
 }
 
 .workContent h3 {
-    font-weight: bold;
-    font-size: 30px;
-    height: 3rem;
-    margin: 2rem 0;
-    color: var(--glow-purple);
+  font-weight: bold;
+  font-size: 30px;
+  height: 3rem;
+  margin: 2rem 0;
+  color: var(--glow-purple);
 }
 
 .projectList {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.projectContent {
+  width: 100%;
+  height: 20rem;
+}
+
+.projectsGallery {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid var(--lavander-purple);
+}
+
+.projectsGallery:hover {
+  transform: scale(1.05);
+}
+
+.projectsGallery:hover::after {
+  /* content: "Show project"; */
+  position: absolute;
+  color: var(--lavander-purple);
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid;
+}
+.projectsGallery h4 {
+  color: var(--glow-purple);
+  font-size: 20px;
+  margin: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.projectsGallery p {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -moz-line-clamp: 2;
+  -moz-box-orient: vertical;
+  white-space: normal;
+  line-height: 1.3em;
+  color: var(--primary-color);
+}
+
+.project {
+  width: 100%;
+  height: 75%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+}
+
+@media screen and (max-height: 900px) {
+  .workContent h3 {
+    font-weight: bold;
+    font-size: 30px;
+    height: 3rem;
+    margin: 1.5rem 0;
+    color: var(--glow-purple);
+  }
+
+  .projectList {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-}
+  }
 
-.projectContent {
+  .projectContent {
     width: 100%;
     height: 20rem;
-}
+  }
 
-.projectsGallery {
+  .projectsGallery {
     width: 100%;
-    height: 100%;
+    height: 85%;
     padding: 10px;
     border: 1px solid var(--lavander-purple);
-}
+  }
 
-.projectsGallery:hover {
-    transform: scale(1.05);
-}
-
-
-.projectsGallery:hover::after {
-    /* content: "Show project"; */
-    position: absolute;
-    color: var(--lavander-purple);
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 900;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid;
-}
-.projectsGallery h4 {
+  .projectsGallery h4 {
     color: var(--glow-purple);
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
+  }
 
-.projectsGallery p {
+  .projectsGallery p {
     overflow: hidden;
     width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     -moz-line-clamp: 2;
+    font-size: 15px;
     -moz-box-orient: vertical;
     white-space: normal;
     line-height: 1.3em;
     color: var(--primary-color);
-}
+  }
 
-.project {
+  .project {
     width: 100%;
-    height: 75%;
+    height: 70%;
     position: relative;
     overflow: hidden;
-}
+  }
 
-.project img {
+  .project img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .workContent {
+    width: 100vw;
+    height: 100%;
+    padding: 2rem;
+  }
 
-    .workContent {
-        width: 100vw;
-        height: 100%;
-        padding: 3rem;
-    }
+  .workContent h3 {
+    font-weight: bold;
+    font-size: 20px;
+    height: 2rem;
+    margin: 1rem 0;
+    color: var(--glow-purple);
+  }
 
-
-    .workContent h3 {
-        font-weight: bold;
-        font-size: 20px;
-        height: 1rem;
-        margin: 1rem 0;
-        color: var(--glow-purple);
-    }
-    
-    .projectList {
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
-    }
-    
+  .projectList {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
 }
