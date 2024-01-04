@@ -86,16 +86,17 @@
 @media screen and (max-width: 1400px) {
   .workContent h3 {
     font-weight: bold;
-    font-size: 25px;
-    height: 3rem;
-    margin: 1.5rem 0;
+    font-size: 20px;
+    height: 2rem;
+    margin: 0.5rem 0;
     color: var(--glow-purple);
   }
 
   .projectList {
     width: 100%;
-    height: auto;
+    height: 40%;
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
   }
