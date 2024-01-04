@@ -109,7 +109,7 @@ label {
     width: 80%;
     margin: auto;
     height: auto;
-    padding: 0.5rem 1rem;
+    padding: 2rem;
     border: 1px solid var(--glow-purple);
     display: block;
   }
@@ -168,7 +168,6 @@ label {
     height: 80%;
     margin-right: 0.5rem;
     padding: 0.8rem;
-    border: 3px solid;
   }
 
   .contact-link button {
@@ -185,7 +184,7 @@ label {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
-    padding: 1rem;
+    padding: 1.3rem;
     width: 100%;
     margin: auto;
     border: 1px solid var(--glow-purple);
