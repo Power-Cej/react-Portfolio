@@ -83,10 +83,10 @@
   object-fit: cover; /* Use 'cover' to maintain aspect ratio and fill the container */
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-width: 1400px) {
   .workContent h3 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     height: 3rem;
     margin: 1.5rem 0;
     color: var(--glow-purple);
@@ -97,12 +97,12 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    gap: 4rem;
   }
 
   .projectContent {
     width: 100%;
-    height: 20rem;
+    height: 18rem;
   }
 
   .projectsGallery {

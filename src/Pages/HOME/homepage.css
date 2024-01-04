@@ -187,46 +187,7 @@ ul li {
   background: linear-gradient(to right, #594bbb, #030130);
 }
 
-@media screen and (max-height: 900px) {
-  /* header {
-      position: fixed;
-      top: 0;
-      z-index: 1;
-      font-size: 2rem;
-      font-family: "Courier New", Courier, monospace;
-      font-weight: bold;
-      width: 100vw;
-      height: 8%;
-      background: linear-gradient(to right, #594bbb, #030130);
-    }
-  
-    .parentContainer {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      overflow: hidden;
-      flex-direction: column;
-    }
-  
-    .works {
-      background-color: var(--midnight-blue);
-      height: 100%;
-    }
-  
-    .contact {
-      background: linear-gradient(to right, #594bbb, #030130);
-      height: 100%;
-    }
-  
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-    } */
-
+@media screen and (max-width: 1400px) {
   .hubby {
     width: 90%;
     float: left;
@@ -238,14 +199,14 @@ ul li {
 
   .hubby h3 {
     float: left;
-    font-size: 35px;
+    font-size: 30px;
     color: var(--primary-color);
   }
 
   .hubby h2 {
     float: left;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--primary-color);
   }
 
@@ -254,6 +215,12 @@ ul li {
     color: var(--paragraph-color);
     font-size: 20px;
     padding-right: 30px;
+  }
+
+  ul li {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
   }
 }
 

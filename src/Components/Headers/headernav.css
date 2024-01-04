@@ -1,175 +1,194 @@
 /* Dropdown button on hover & focus */
 .position div {
-    float: right;
-    visibility: hidden;
+  float: right;
+  visibility: hidden;
 }
 
 .dropbtn {
-    height: 40px;
-    width: 40px;
-    border: none;
-    cursor: pointer;
-    z-index: 5;
-    filter: brightness(0) invert(1);
-    margin: 15px;
-
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  filter: brightness(0) invert(1);
+  margin: 15px;
 }
 
 .dropbtn:hover {
-    transform: scale(1.2);
-
+  transform: scale(1.2);
 }
 
 .dropbtn::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary-color);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .dropbtn:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--midnight-blue);
-    /* min-width: 160px; */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 5;
+  display: none;
+  position: absolute;
+  background-color: var(--midnight-blue);
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: var(--primary-color);
-    padding: 12px 16px;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
+  color: var(--primary-color);
+  padding: 12px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-    display: block;
+  display: block;
 }
 
 nav a {
-    display: block;
-    font-size: 25px;
-    position: relative;
-    z-index: 2;
-    color: var(--primary-color);
-    text-decoration: none;
-    float: right;
-    margin: 15px;
-    font-weight: bold;
+  display: block;
+  font-size: 25px;
+  position: relative;
+  z-index: 2;
+  color: var(--primary-color);
+  text-decoration: none;
+  float: right;
+  margin: 15px;
+  font-weight: bold;
 }
 
 .anchor:hover {
-    transform: scale(1.2);
-    color: var(--paragraph-color) !important;
+  transform: scale(1.2);
+  color: var(--paragraph-color) !important;
 }
 
 .anchor::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary-color);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
-
 
 .anchor:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-
 .github {
-    height: 30px;
-    width: 30px;
-    filter: brightness(0) invert(1);
+  height: 30px;
+  width: 30px;
+  filter: brightness(0) invert(1);
 }
 
 .home {
-    position: relative;
-    font-size: 2rem;
-    margin: 15px;
+  position: relative;
+  font-size: 2rem;
+  margin: 15px;
 }
 
 .home a {
+  z-index: 2;
+  font-size: 30px;
+  position: fixed;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+  .home a {
     z-index: 2;
-    font-size: 30px;
+    font-size: 23px;
     position: fixed;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--primary-color);
     font-weight: bold;
+  }
+
+  nav a {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    color: var(--primary-color);
+    text-decoration: none;
+    float: right;
+    margin: 15px;
+    font-weight: bold;
+  }
 }
 
-
 @media screen and (max-width: 1000px) {
-    .home {
-        position: relative;
-        /* margin: 15px; */
-    }
-    
-    .home a {
-        z-index: 2;
-        font-size: 20px;
-        position: fixed;
-        left: 0;
-        margin: 0 3rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: var(--primary-color);
-        font-weight: bold;
-    }
+  .home {
+    position: relative;
+    /* margin: 15px; */
+  }
 
-    .dropbtn {
-        height: 25px;
-        width: 25px;
-    }
+  .home a {
+    z-index: 2;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    margin: 0 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
 
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        margin-right: 80px;
-    }
+  .dropbtn {
+    height: 25px;
+    width: 25px;
+  }
 
-    nav a {
-        visibility: hidden;
-        display: none;
-    }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 80px;
+  }
 
-    .github {
-        visibility: hidden;
-        display: none;
-    }
-    .position div {
-        visibility: visible !important;
-        padding: 0 3rem;
-        right: 0;
-        position: fixed;
-        z-index: 5;
-        margin-right: auto;
-    }
+  nav a {
+    visibility: hidden;
+    display: none;
+  }
+
+  .github {
+    visibility: hidden;
+    display: none;
+  }
+  .position div {
+    visibility: visible !important;
+    padding: 0 3rem;
+    right: 0;
+    position: fixed;
+    z-index: 5;
+    margin-right: auto;
+  }
 }
