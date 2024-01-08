@@ -72,7 +72,6 @@ header {
 }
 
 .verticalIMG {
-  object-fit: contain;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -90,7 +89,7 @@ header {
 }
 
 .sideIMG {
-  object-fit: contain;
+  object-fit: none;
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -108,7 +107,6 @@ header {
 }
 
 .horizontalIMG {
-  object-fit: contain;
   display: flex;
   position: absolute;
   flex-direction: row;
@@ -317,7 +315,6 @@ ul li {
   }
 
   .verticalIMG {
-    object-fit: contain;
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -335,7 +332,6 @@ ul li {
   }
 
   .sideIMG {
-    object-fit: contain;
     display: flex;
     position: absolute;
     flex-direction: column;
