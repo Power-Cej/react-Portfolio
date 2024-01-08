@@ -1,47 +1,48 @@
-.loadingContent{
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.loadingContent {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .loadingContent p {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
-.loading-anim{
-    border: 3px solid var(--title-color);
-    border-radius: 50%;
-    border-top: 5px solid var(--glow-purple);
-    width: 4rem;
-    height: 4rem;
-    animation: isloading 1s linear infinite;
+.loading-anim {
+  border: 3px solid var(--title-color);
+  border-radius: 50%;
+  border-top: 5px solid var(--glow-purple);
+  width: 4rem;
+  height: 4rem;
+  animation: isloading 1s linear infinite;
 }
 
 @keyframes isloading {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
 @media screen and (max-width: 1000px) {
+  .loadingContent p {
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-    .loadingContent p {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .loading-anim{
-        border: 3px solid var(--title-color);
-        border-radius: 50%;
-        border-top: 5px solid var(--glow-purple);
-        width: 3rem;
-        height: 3rem;
-        animation: isloading 1s linear infinite;
-    }
-
-
+  .loading-anim {
+    border: 3px solid var(--title-color);
+    border-radius: 50%;
+    border-top: 5px solid var(--glow-purple);
+    width: 3rem;
+    height: 3rem;
+    animation: isloading 1s linear infinite;
+  }
 }
