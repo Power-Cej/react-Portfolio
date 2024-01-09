@@ -160,13 +160,13 @@ const HomePage = () => {
             </div>
 
             <div className="sideIMG">
-              <img src={redux} className="object" data-value="5" alt="REDUX" />
               <img
                 src={blender}
                 className="object"
-                data-value="-5"
+                data-value="5"
                 alt="BLENDER"
               />
+              <img src={redux} className="object" data-value="-5" alt="REDUX" />
             </div>
 
             <div className="horizontalIMG">
