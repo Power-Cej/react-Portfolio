@@ -71,6 +71,12 @@ header {
   /* filter: brightness(0) invert(); */
 }
 
+.conainerIMG img:hover { 
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+
 .verticalIMG {
   display: flex;
   position: absolute;
