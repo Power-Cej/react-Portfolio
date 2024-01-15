@@ -1,6 +1,7 @@
 export const TechStacks = [
   { value: "JAVASCRIPT", label: "JAVASCRIPT" },
-  { value: "REACT", label: "REACT" },
+  { value: "REACTJS", label: "REACTJS" },
+  { value: "REACT NATIVE", label: "REACT NATIVE" },
   { value: "HTML", label: "HTML" },
   { value: "CSS", label: "CSS" },
   { value: "BLENDER", label: "BLENDER" },
