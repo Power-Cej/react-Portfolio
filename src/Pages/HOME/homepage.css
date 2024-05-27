@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --primary-color: #ffff;
   --title-color: #61569c;
@@ -44,7 +43,8 @@ header {
   height: 100vh;
   width: 100vw;
   display: flex;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   flex-direction: column;
 }
 .container {
@@ -142,7 +142,7 @@ header {
 }
 
 .hubby {
-  width: 70%;
+  width: 90%;
   float: left;
   margin: 10px;
   display: flex;
